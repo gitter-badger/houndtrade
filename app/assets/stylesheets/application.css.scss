@@ -56,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
 	font-family: 'Muli', sans-serif;
 	text-transform: uppercase;
+	
 }
 
 .navbar-default {
@@ -63,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	background-color: #127ab1;
+	border: none;
 
 	.navbar-nav > li > a {
 		color: #222;
