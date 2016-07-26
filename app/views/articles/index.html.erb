@@ -1,6 +1,7 @@
-<h1>Listing articles</h1>
+<div class="col-md-8 col-md-offset-2 well">
+	<h1 class="new-msg-header">Articles</h1>
  
-<table>
+<table style="margin: 20px;">
   <tr>
     <th>Title</th>
     <th>Text</th>
@@ -11,11 +12,17 @@
     <tr>
       <td><%= article.title %></td>
       <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    
+      
+      <td><%= link_to 'Show', article_path(article), class: "btn btn-default" %></td> 
+      <td><%= link_to 'Edit', edit_article_path(article), class: "btn btn-warning" %></td> 
       <td><%= link_to 'Destroy', article_path(article),
               method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
+              data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+        
     </tr>
+             
+   
   <% end %>
 </table>
+</div>
