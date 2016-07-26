@@ -1,5 +1,6 @@
-<div class="col-md-8 col-md-offset-2">
+<div class="col-md-8 col-md-offset-2 well">
 	<h2>Sign up</h2>
+	<h5 class="text-center"><b>Please Note:</b> Hound Trade will not send anything to your email address.</h5>
 
 	<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 	  <%= f.error_notification %>
@@ -14,6 +15,7 @@
 	    <%= f.button :submit, "Sign up" %>
 	  </div>
 	<% end %>
+	<br />
 
 	<%= render "devise/shared/links" %>
 </div>

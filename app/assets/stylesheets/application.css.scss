@@ -57,25 +57,26 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Muli', sans-serif;
 	text-transform: uppercase;
 	
+	
 }
 
 .navbar-default {
 
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: #127ab1;
+	background-color: #78866b;
 	border: none;
 
 	.navbar-nav > li > a {
-		color: #222;
+		color: #fff;
 	}
 
 	.navbar-link {
-		color: #222;
+		color: #fff;
 	}
 
 	.navbar-brand {
-		color: #222;
+		color: #fff;
 		letter-spacing: 1.1px;
 	}
 
@@ -90,8 +91,21 @@ h1, h2, h3, h4, h5, h6 {
 		color: #0a8fd5;
 	}
 }
-
-
+/* Jumbotron styles */
+.jumbotron {
+	background-color:#6b7886;
+	
+	
+	h1 {
+		text-align: center;
+		color: white;
+		padding-top: 40px;
+	}
+	p {
+		text-align: center;
+		color: white;
+	}
+}
 /* Message styles */
 
 .message {
@@ -180,3 +194,4 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 }
+
