@@ -116,7 +116,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 10px;
 	padding: 1.4em 1.4em;
 	height: 150px;
-	border-bottom: 4px solid #0a8fd5;
+	
+	border-radius: 15px;
+	text-align: center;
 
 	.message-title {
 		font-size: 1.5em;
@@ -147,6 +149,8 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	font-family: 'Muli', sans-serif;
 	font-weight: 300;
+	margin-bottom: 100px;
+	border-radius: 15px;
 
 	h2 {
 		margin-top: 0;
@@ -173,23 +177,30 @@ h1, h2, h3, h4, h5, h6 {
 /* Comment styles */
 
 .comment {
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid white;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	background-color: #eee;
+	margin: 15px;
 
 	.comment-content {
 		font-size: 1.25em;
+		padding-left: 15px;
+		color: black;
 	}	
 
 	.comment-posted-by {
-		color: #eee;
+		color: black;
 		font-size: 0.8em;
+		padding-left: 15px;
 	}
 
 	.links {
 		margin-top: 15px;
+		padding-left: 15px;
+		
 		a {
-			color: #0a8fd5;
+			color: black;
 			margin-right: 15px;
 		}
 	}

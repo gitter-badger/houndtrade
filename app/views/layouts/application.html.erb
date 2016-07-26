@@ -21,6 +21,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Articles", controller: 'articles' %></li>
         <li class="dropdown">
         </li>
         <li><a href="#">About</a></li>
@@ -30,6 +31,7 @@
       <ul class="nav navbar-nav navbar-right">
       	<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
         <li><%= link_to "New Ad", new_message_path %></li>
+        <li><%= link_to 'New article', new_article_path %></li>
         <% else %>
         </ul>
       	<ul class="nav navbar-nav navbar-right">
