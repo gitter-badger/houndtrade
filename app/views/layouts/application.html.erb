@@ -21,16 +21,16 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Articles", articles_path %></li>
+       <!-- <li><%= link_to "Articles", articles_path %></li>-->
         <li class="dropdown">
         </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><%= link_to "About", static_pages_about_path %> </li>
+        <li><%= link_to "Contact", static_pages_contact_path %> </li>
       </ul>
       <% if user_signed_in? %>
       <ul class="nav navbar-nav navbar-right">
       	<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
-      	<li><%= link_to 'New article', new_article_path %></li>
+    <!-- <li><%= link_to 'New article', new_article_path %></li> -->
         <li><%= link_to "New Ad", new_message_path %></li>
         
         <% else %>
@@ -59,11 +59,6 @@
 		<%= yield %>
 	</div>
 	
-    <footer>
-      <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-      </div>
-    </footer>
 	
 	
 
