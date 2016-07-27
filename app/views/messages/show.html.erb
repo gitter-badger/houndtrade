@@ -15,7 +15,7 @@
 
 
 		<!-- Add a conditional so that the 'edit' and 'destroy' links only appear for the user who created the message. -->
-		<div class="links btn-group">
+	<div class="links btn-group">
 			<%= link_to "Back", root_path, class: "btn btn-default" %>
 			<% if @message.user_id == current_user.id %>
 				<%= link_to "Edit", edit_message_path(@message), class: "btn btn-default" %>
